@@ -7,18 +7,16 @@ type Props = {
 
 export function AllPosts({ posts }: Props) {
   return (
-    <section>
-      <div className="flex flex-col justify-center items-center mt-40">
-        {posts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            date={post.date}
-            slug={post.slug}
-            excerpt={post.excerpt}
-          />
-        ))}
-      </div>
-    </section>
+    <>
+      {posts.map((post) => (
+        <PostPreview
+          key={post.slug}
+          title={post.title}
+          date={post.date}
+          slug={post.slug}
+          excerpt={post.excerpt}
+        />
+      ))}
+    </>
   );
 }
