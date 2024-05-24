@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import "./globals.css";
+import Alert from "./_components/alert";
 
 const satoshiFont = localFont({
   src: "./Satoshi-Variable.ttf",
@@ -58,6 +59,7 @@ export default function RootLayout({
       </head>
       <body className={`${satoshiFont.className} bg-zinc-100`}>
         <div className="min-h-screen ">{children}</div>
+        <Alert />
       </body>
     </html>
   );

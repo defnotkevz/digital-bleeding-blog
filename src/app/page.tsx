@@ -13,8 +13,10 @@ export default function Index() {
 
   return (
     <main>
-      <Intro />
-      {morePosts.length > 0 && <AllPosts posts={morePosts} />}
+      <Container>
+        <Intro />
+        {morePosts.length > 0 && <AllPosts posts={morePosts} />}
+      </Container>
     </main>
   );
 }

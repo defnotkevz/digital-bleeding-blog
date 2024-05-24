@@ -20,12 +20,13 @@ export default async function Post({ params }: Params) {
 
   return (
     <main>
-      <Header />
-      <article className="mb-32">
-        <PostHeader title={post.title} date={post.date} />
-        <PostBody content={content} />
-      </article>
-      <Alert preview={post.preview} />
+      <Container>
+        <Header />
+        <article className="mb-32">
+          <PostHeader title={post.title} date={post.date} />
+          <PostBody content={content} />
+        </article>
+      </Container>
     </main>
   );
 }
