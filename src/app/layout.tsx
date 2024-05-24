@@ -1,15 +1,16 @@
-import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const satoshiFont = localFont({
+  src: "./Satoshi-Variable.ttf",
+});
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `Digital Bleeding`,
+  description: `Encapsultaion of Human experiences into zeroes and ones.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -55,9 +56,8 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body className={inter.className}>
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+      <body className={`${satoshiFont.className} bg-zinc-100`}>
+        <div className="min-h-screen ">{children}</div>
       </body>
     </html>
   );
