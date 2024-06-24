@@ -10,7 +10,7 @@ const satoshiFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: `Digital Bleeding`,
+  title: `unconventional.`,
   description: `Encapsultaion of Human experiences into zeroes and ones.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
