@@ -8,7 +8,7 @@ export function Intro() {
         <span className="text-black">conventional.</span>
       </h1>
       <h4 className="text-center md:text-left text-lg md:pl-8">
-        evanescence of human emotions in zeroes and ones.
+        {/* evanescence of human emotions in zeroes and ones. */}
       </h4>
     </section>
   );

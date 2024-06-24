@@ -1,4 +1,3 @@
-import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
   title: `unconventional.`,
   description: `Encapsultaion of Human experiences into zeroes and ones.`,
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    images: "/assets/og-image.png",
   },
 };
 
