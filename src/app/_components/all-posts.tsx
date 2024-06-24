@@ -8,15 +8,18 @@ type Props = {
 export function AllPosts({ posts }: Props) {
   return (
     <>
-      {posts.map((post) => (
-        <PostPreview
-          key={post.slug}
-          title={post.title}
-          date={post.date}
-          slug={post.slug}
-          excerpt={post.excerpt}
-        />
-      ))}
+      <ul>
+        {posts.map((post) => (
+          <li>
+            <PostPreview
+              key={post.slug}
+              title={post.title}
+              date={post.date}
+              slug={post.slug}
+            />
+          </li>
+        ))}
+      </ul>
     </>
   );
 }

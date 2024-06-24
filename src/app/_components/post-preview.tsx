@@ -7,11 +7,10 @@ import DateFormatter from "./date-formatter";
 type Props = {
   title: string;
   date: string;
-  excerpt: string;
   slug: string;
 };
 
-export function PostPreview({ title, date, excerpt, slug }: Props) {
+export function PostPreview({ title, date, slug }: Props) {
   return (
     <div className="w-full mb-52 flex flex-col justify-center items-center mt-36">
       <h3 className="text-5xl max-w-2xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none w-full mb-6 md:text-left">
@@ -22,7 +21,6 @@ export function PostPreview({ title, date, excerpt, slug }: Props) {
       <div className="text-lg mb-8 italic w-full md:w-[42rem] lg:w-[42rem] text-left">
         <DateFormatter dateString={date} />
       </div>
-      <p className="text-xl leading-relaxed mb-4 max-w-2xl">{excerpt}</p>
     </div>
   );
 }

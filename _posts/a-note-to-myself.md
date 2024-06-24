@@ -1,6 +1,5 @@
 ---
 title: "a note to myself."
-excerpt: "an excerpt from the school of my thoughts"
 date: "2024-06-24T16:35:07.322Z"
 ogImage:
   url: "/assets/blog/preview/cover.jpg"
